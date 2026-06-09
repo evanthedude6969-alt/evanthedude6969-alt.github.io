@@ -106,6 +106,20 @@ padding:25px;
 border-radius:16px;
 }
 
+input, select, textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+border:none;
+font-size:16px;
+}
+
+button{
+border:none;
+cursor:pointer;
+}
+
 .footer{
 padding:60px 20px;
 text-align:center;
@@ -131,7 +145,7 @@ font-size:2.5rem;
 <h1>Turn Your Old PC Into Your Own <span class="blue">Private Streaming Server</span></h1>
 
 <p>
-Linux • Jellyfin • Movies & TV Shows • Custom Themes
+Linux • Jellyfin • Media Server Setup • Custom Themes
 </p>
 
 <a href="#pricing" class="btn">View Pricing</a>
@@ -161,8 +175,7 @@ Linux • Jellyfin • Movies & TV Shows • Custom Themes
 <br>
 <ul>
 <li>Everything in Basic Setup</li>
-<li>Movies Included</li>
-<li>TV Shows Included</li>
+<li>Movies & Shows Added</li>
 <li>1TB Drive Required</li>
 </ul>
 </div>
@@ -190,23 +203,23 @@ Linux • Jellyfin • Movies & TV Shows • Custom Themes
 <div class="steps">
 
 <div class="step">
-<h3>1. Message Me</h3>
-<p>Send your PC specs through Facebook Marketplace.</p>
+<h3>1. Submit A Request</h3>
+<p>Fill out the form below with your PC specs and package.</p>
 </div>
 
 <div class="step">
-<h3>2. Drop Off Or Mail In</h3>
-<p>Local drop-off available. Mail-in service available nationwide.</p>
+<h3>2. Local or Mail-In</h3>
+<p>Choose local drop-off or nationwide mail-in service.</p>
 </div>
 
 <div class="step">
 <h3>3. Setup & Configuration</h3>
-<p>I install Linux, Jellyfin and configure everything.</p>
+<p>Your server is configured and tested.</p>
 </div>
 
 <div class="step">
 <h3>4. Ready To Stream</h3>
-<p>Pick it up or have it shipped back ready to use.</p>
+<p>Pick it up or have it shipped back.</p>
 </div>
 
 </div>
@@ -215,23 +228,86 @@ Linux • Jellyfin • Movies & TV Shows • Custom Themes
 
 <section class="section">
 
-<h2>Why Choose This?</h2>
-
-<div class="cards">
+<h2>Mail-In Service</h2>
 
 <div class="card">
-<h3>100% Private</h3>
-<p>Your media. Your server. Your rules.</p>
+
+<p>Mail-In Service Available Nationwide.</p>
+
+<br>
+
+<p>Customer is responsible for shipping costs both ways.</p>
+
+<br>
+
+<p>Tracking and insurance are recommended.</p>
+
+<br>
+
+<p>Please back up important files before sending your PC. Linux installation may erase existing data.</p>
+
 </div>
 
-<div class="card">
-<h3>No Monthly Fees</h3>
-<p>One-time setup. No subscriptions.</p>
-</div>
+</section>
+
+<section class="section">
+
+<h2>Request A Setup</h2>
 
 <div class="card">
-<h3>Works Everywhere</h3>
-<p>Watch on TVs, phones, tablets and PCs.</p>
+
+<form action="https://formspree.io/f/mvznrrdk" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<input type="text" name="facebook" placeholder="Facebook Profile Name" required>
+
+<input type="text" name="pc_specs" placeholder="PC Specs" required>
+
+<select name="package" required>
+<option value="">Select Package</option>
+<option>$50 Basic Setup</option>
+<option>$80 Setup + Movies & Shows</option>
+<option>$100 Premium Package</option>
+</select>
+
+<select name="service_type" required>
+<option value="">Local or Mail-In?</option>
+<option>Local Drop-Off</option>
+<option>Mail-In Service</option>
+</select>
+
+<textarea name="message" rows="5" placeholder="Tell me about your setup"></textarea>
+
+<button type="submit" class="btn">Send Request</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>FAQ</h2>
+
+<div class="steps">
+
+<div class="step">
+<h3>Do I need a hard drive?</h3>
+<p>For media packages, a 1TB drive is required. 2TB+ recommended.</p>
+</div>
+
+<div class="step">
+<h3>Do you offer mail-in service?</h3>
+<p>Yes. Customers are responsible for shipping costs both ways.</p>
+</div>
+
+<div class="step">
+<h3>How do I contact you?</h3>
+<p>Submit the form and I'll reach out to you.</p>
 </div>
 
 </div>
@@ -239,15 +315,9 @@ Linux • Jellyfin • Movies & TV Shows • Custom Themes
 </section>
 
 <div class="footer">
-
-<h2>Ready To Get Started?</h2>
-
-<p>Message me through Facebook Marketplace.</p>
-
+<h2>Evans Media Servers</h2>
 <p>Local Drop-Off Available</p>
-
 <p>Mail-In Service Available Nationwide</p>
-
 </div>
 
 </body>
